@@ -1,0 +1,177 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.15in}
+\addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Large \scshape Jordan Martinez} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{555-123-4567} ~ 
+    {\faEnvelope\ \underline{jordan.martinez@email.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/jordanmartinez}{linkedin.com/in/jordanmartinez}}} ~
+    {\faGithub\ \underline{\href{https://github.com/jmartinez}{github.com/jmartinez}}} ~
+    {\faGlobe\ \underline{\href{https://jordanmartinez.dev}{jordanmartinez.dev}}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Summary}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+            Results-driven and AWS-certified Software Engineer with a passion for building scalable cloud solutions and cost-saving automations. Proven ability to architect production ETL pipelines and optimize infrastructure, seeking to leverage data engineering and cloud expertise to deliver robust software.
+        }}
+    \end{itemize}
+\vspace{-16pt}
+
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+            \textbf{Languages:} Python, SQL, JavaScript, Bash \\
+            \textbf{Cloud \& DevOps:} AWS (Lambda, EC2, S3, RDS, CloudFormation, Cost Explorer), Docker, CI/CD, IaC \\
+            \textbf{Data Engineering:} PostgreSQL, MySQL, MongoDB, ETL Pipelines, Pandas, NumPy, Data Modeling \\
+            \textbf{Web Development:} Flask, RESTful APIs, React (basic), HTML/CSS, JWT Authentication \\
+            \textbf{Tools:} Git, VS Code, Jupyter, Linux, Agile/Scrum
+        }}
+    \end{itemize}
+\vspace{-16pt}
+
+\section{Education} 
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {State University}{Graduated May 2024}
+      {Bachelor of Science in Information Technology | GPA: 3.6/4.0}{New Brunswick, NJ}
+    \resumeItem{\textbf{Certifications:} AWS Certified Solutions Architect – Associate (Expected March 2025) | \textbf{Coursework:} Python for Data Science, SQL for Data Analysis}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+\section{Technical Projects} 
+    \resumeSubHeadingListStart
+    
+    \resumeProjectHeading
+        {\textbf{E-Commerce Analytics Platform} $|$ \emph{Python, AWS Lambda, RDS, PostgreSQL, Flask, Pandas}}{Jan 2025}
+        \resumeItemListStart
+            \resumeItem{Achieved 99.9\% uptime by architecting a serverless ETL pipeline to process over 50,000 daily transactions using AWS Lambda and S3}
+            \resumeItem{Boosted query performance by 40\% through strategic indexing and schema normalization, enabling real-time analytics for 10K+ SKUs}
+            \resumeItem{Saved 3 hours of daily manual analysis by automating a reporting system that delivered actionable insights to stakeholders via email}
+            \resumeItem{Developed a Flask REST API and interactive dashboard to visualize sales trends, customer segments, and product performance}
+        \resumeItemListEnd
+    \vspace{-13pt}
+    
+    \resumeProjectHeading
+        {\textbf{Cloud Cost Optimizer} $|$ \emph{Python, Boto3, AWS (EC2, CloudFormation, Cost Explorer API)}}{Dec 2024}
+        \resumeItemListStart
+            \resumeItem{Slashed cloud costs by 30\% (\$450/month) by developing a Python script to automate EC2 start/stop schedules based on usage patterns}
+            \resumeItem{Enabled one-click, scalable application deployment by creating Infrastructure-as-Code templates with AWS CloudFormation}
+            \resumeItem{Ensured cost control by implementing comprehensive CloudWatch monitoring with automated alerts and remediation for anomalies}
+            \resumeItem{Managed \$1,500/month in AWS infrastructure by building an intelligent resource analyzer to identify and report idle instances}
+        \resumeItemListEnd
+    \vspace{-13pt}
+    
+    \resumeProjectHeading
+        {\textbf{FinanceTrack Web Application} $|$ \emph{Python, Flask, SQLite, JavaScript, Chart.js, AWS EC2}}{Sept 2024}
+        \resumeItemListStart
+            \resumeItem{Achieved sub-100ms response times for 500+ test transactions by deploying a full-stack application to AWS EC2 with automated S3 backups}
+            \resumeItem{Ensured application security by implementing OWASP best practices, including SQL injection prevention and encrypted password storage}
+            \resumeItem{Featured in the university capstone showcase for technical excellence after receiving positive feedback from 20+ beta users}
+            \resumeItem{Engineered the app with secure JWT authentication, transaction management, and interactive budget tracking dashboards}
+        \resumeItemListEnd
+    \vspace{-13pt}
+    
+    \resumeProjectHeading
+        {\textbf{SQL Query Performance Analyzer} $|$ \emph{Python, PostgreSQL, Query Optimization, EXPLAIN Analysis}}{July 2024}
+        \resumeItemListStart
+            \resumeItem{Improved average query execution time by 60\% by developing a tool to detect and resolve missing indexes, inefficient joins, and N+1 patterns}
+            \resumeItem{Generated detailed optimization reports with visual EXPLAIN plan comparisons and prioritized, actionable recommendations}
+        \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+\section{Professional Experience}
+    \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {TechCorp Solutions}{May 2023 -- Aug 2023}
+      {IT Support Intern}{Remote}
+        \resumeItemListStart
+            \resumeItem{Eliminated 10 hours of manual work per week by engineering Python scripts to automate user provisioning and system monitoring}
+            \resumeItem{Reduced ticket response time by 20\% by building SQL dashboards to analyze 500+ monthly tickets and identify key trends}
+            \resumeItem{Achieved a 95\% first-call resolution rate (15\% above team average) supporting 50+ users with hardware, software, and network issues}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {State University IT Department}{Sept 2022 -- May 2024}
+      {Student IT Assistant}{New Brunswick, NJ}
+        \resumeItemListStart
+            \resumeItem{Cut equipment tracking time by 90\% (from 5 hours to 30 minutes weekly) by developing a Python-based inventory system}
+            \resumeItem{Ensured 99\% uptime for a 100+ workstation lab via proactive monitoring, rapid troubleshooting, and preventive maintenance}
+            \resumeItem{Mentored and trained 3 new IT assistants on support workflows, documentation standards, and troubleshooting methodologies}
+        \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+
+\end{document}
